@@ -1,0 +1,73 @@
+
+Project 2 Submission
+
+Group Name:   Team 19
+
+When you have completed the project, complete the following form and include it with your project. Include this file as a text file in the folder with your project when you turn it in. 
+
+For the Checkpoint, Describe a sequence of operations to create a new account and log onto the server: 
+To create a new user you would press the sign up button which would bring you to the signup page where you can enter the info that then sends to cloud.saveUserToCloud to then route to the php and save the user data to the SQL
+When a login occurs when you have the text filled out and press the login which routes to cloud load user and authenticates it, it then places the user in the waiting dlg to create a new game and wait for a second player
+
+A functionality checklist will not be provided for the project. Treat this as you would a request from a client and identify what the client requires. 
+
+Member 1: Richard 
+
+Responsiblity:
+Chip location loading from server
+Design/outline modifications of ConnectFour for networked turns
+Game networking sequence
+Win screen activity
+
+
+Member 2: Basher
+
+Responsiblity:
+Create failure cases - network lost/user disconnect
+Design login networking sequence
+Login verrification
+
+
+Member 3: Jack
+
+Responsiblity:
+Save User Login Checkbox
+Retrofit Models
+Create / Add user Activity
+Signup Layout
+Game Networking POST Method
+
+
+Member 4 (if applicable): Gavin 
+
+Responsiblity:
+Menus - Determine transitions
+Main Menu - Login game waiting screen
+2 password authenticate
+Save User Login Checkbox
+
+
+Member 5 (if applicable): Mitchell 
+
+Responsiblity:
+Main Menu - Create Account / Add User Screen
+Main Menu - Remove Start Game Button, Change P1 & P2 IDs, add remember checkbox
+Main Menu - Login Screen
+
+
+Provide instructions on how to reach the first editing activity if the login button is not yet functional.
+The log in works I just wanted to state that the timeout timer is 30 seconds which is a quick period but we did it for ease of grading and testing
+
+User account the server-side communications is running under: Basher
+
+Paths to all server-side scripts: https://webdev.cse.msu.edu/~ghalebba/cse476/project2/
+
+
+Calls in the code to the server (provide a class name and function, or URL used for debugging):
+Cloud.saveUserToCloud
+Cloud.loadUserFromCloud
+Cloud.saveGameState
+Cloud.joinGame
+Cloud.leaveGame
+Cloud.getGameStatus
+Cloud.getGameState

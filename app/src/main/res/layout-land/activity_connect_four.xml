@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectFourActivity"
+    android:orientation="vertical">
+
+
+    <view
+        android:id="@+id/connectFourView"
+        class="edu.msu.holsche2.project1.ConnectFourView"
+        android:layout_width="430dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonContainer"
+        android:gravity="center_horizontal"
+        android:text="@string/player_1_turn"
+        android:textColor="#18453B"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="onBack"
+            android:text="@string/back"
+            android:textColor="#18453B"
+            android:textSize="20sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="onUndo"
+            android:text="@string/undo"
+            android:textColor="#18453B"
+            android:textSize="20sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="onEndTurn"
+            android:text="@string/end_turn"
+            android:textColor="#18453B"
+            android:textSize="20sp" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:onClick="onSurrender"
+            android:text="@string/surrender"
+            android:textColor="#18453B"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>
